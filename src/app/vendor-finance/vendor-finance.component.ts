@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router} from '@angular/router'
 
 @Component({
   selector: 'app-vendor-finance',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VendorFinanceComponent implements OnInit {
 
-  constructor() { }
+  toggle = false;
+
+  constructor(private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  show() {
+    this.router.navigate(['manageIm'], {relativeTo:this.route});
+    this.toggle = true
   }
 
 }

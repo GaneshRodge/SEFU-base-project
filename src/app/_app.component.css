@@ -6,6 +6,7 @@ body {
 
 /*Common CSS Start*/
 #wrapper {
+    /* font-family: Roboto, Medium; */
     font: normal normal medium 16px/19px Roboto;
 }
 
@@ -32,8 +33,11 @@ body {
 }
 
 #page-content-wrapper nav {
-    /* background-color: #004eff; */
+    background-color: #E4E4E4;
     /* background-image: linear-gradient(to right, #5803ff, #ff00a5, #77758f); */
+    /* background: transparent linear-gradient(269deg, #280071 0%, #791162 73%, #C72153 100%) 0% 0% no-repeat padding-box;
+    opacity: 1; */
+    /* background: #E4E4E4 0% 0% no-repeat padding-box; */
 }
   
 #wrapper.toggled #sidebar-wrapper {
@@ -41,32 +45,12 @@ body {
 }
 
 #navbarSupportedContent li .nav-link {
-    /* color: #fff; */
+    color: #fff;
 }
 
 #sidebar-wrapper .list-group-item{
     height: 5rem;
     padding: 2rem 3rem;
-}
-
-.search-icon {
-  position: absolute;
-  z-index: 2;
-  display: block;
-  top: 19px;
-  text-align: center;
-  color: #aaa;
-  margin-left: 28px;
-}
-
-.search-bar {
-  padding-left: 5px;
-  text-align: center;
-  border-radius: 25px;
-}
-.form-search {
-  margin-left: 141px;
-  width: 50%;
 }
 
 /*Common CSS End*/
@@ -76,6 +60,7 @@ body {
 @media (min-width: 992px) {
     #navbarSupportedContent ul {
         margin: auto;
+        column-gap: 7rem;
     }   
 }
 @media (min-width: 768px) {

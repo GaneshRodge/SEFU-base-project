@@ -1,25 +1,23 @@
-<!-- <app-header></app-header>
-<div>
-  <router-outlet></router-outlet>
-</div>
-<app-footer></app-footer> -->
-
 <div class="d-flex" id="wrapper">
   <!-- Sidebar -->
   <div class="border-right" id="sidebar-wrapper"  [ngClass]="status ? 'hide' : 'show'">
-    <!-- <div class="sidebar-heading"></div> -->
+    <div class="sidebar-heading">
+      <a class="" href="#">
+        <img src="../assets/ybbi_corp.png" alt="logo">
+    </a>
+    </div>
     <div class="list-group list-group-flush">
       <a routerLink="/home" routerLinkActive="activebutton" class="list-group-item list-group-item-action bg-light">
-        <i class="fa fa-home"></i> Home 
-      </a>
-      <a routerLink="/dealer-finance" routerLinkActive="activebutton" class="list-group-item list-group-item-action bg-light">
-        <i class="fa fa-user"></i> Dealer Finance
+        <span class="fas fa-hotel"></span> Home 
       </a>
       <a routerLink="/vendor-finance" routerLinkActive="activebutton" class="list-group-item list-group-item-action bg-light">
-        <i class="fa fa-user"></i> Vendor Finance
+        <span class="fas fa-hotel"></span> Vendor Finance
+      </a>
+      <a routerLink="/dealer-finance" routerLinkActive="activebutton" class="list-group-item list-group-item-action bg-light">
+        <span class="fas fa-hotel"></span> Dealer Finance
       </a>
       <a routerLink="/customer-support" routerLinkActive="activebutton" class="list-group-item list-group-item-action bg-light">
-        <i class="fa fa-users"></i> Customer Support
+        <span class="fas fa-hotel"></span> Customer Support
       </a>
     </div>
   </div>
@@ -28,32 +26,20 @@
   <!-- Page Content -->
   <div id="page-content-wrapper">
     <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid p-0">
-        <button class="btn menu-btn" (click)="clickEvent()">
-          <i class="menu-icon fa fa-bars fa-lg mr-3"></i>
-        </button>
-        <a class="" href="#">
-          <img src="../assets/ybbi_corp.png" alt="logo">
-        </a>
+      <div class="container-fluid">
+        <button class="btn btn-success btn-outline-none" (click)="clickEvent()">Toggle Menu</button>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <form class="d-flex form-search">
-            <span class="fa fa-search search-icon"></span>
-            <input class="form-control me-2 search-bar shadow" type="search" placeholder="Search" aria-label="Search">
-          </form>
-          <ul class="navbar-nav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa fa-globe" aria-hidden="true"></i></a>
+              <a class="nav-link active" aria-current="page" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
+              <a class="nav-link" href="#">New</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa fa-power-off" aria-hidden="true"></i></a>
-            </li>
-            <!-- <li class="nav-item dropdown">
+            <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 SignUp/Login
               </a>
@@ -63,7 +49,11 @@
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Reset</a></li>
               </ul>
-            </li> -->
+            </li>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-info btn-outline-none" type="button">Search</button>
+            </form>
           </ul>
         </div>
       </div>

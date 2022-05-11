@@ -1,0 +1,45 @@
+<div class="mt-4">
+    <table class="table text-center">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">IM Name</th>
+            <th scope="col">Nick Name</th>
+            <th scope="col">City</th>
+            <th scope="col">Phone Number</th>
+            <th scope="col">Business Group</th>
+            <th scope="col">Debit Account</th>
+            <th scope="col">IM Limit</th>
+            <th scope="col">Limit Expiry Date</th>
+            <th scope="col">Status</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of demoArray">
+            <td>{{data.imName}}</td>
+            <td>{{data.nickname}}</td>
+            <td>{{data.city}}</td>
+            <td>{{data.phone}}</td>
+            <td>{{data.business}}</td>
+            <td>{{data.debitAcc}}</td>
+            <td>{{data.imLimit}}</td>
+            <td>{{data.limitDate}}</td>
+            <td>{{data.Status}}</td>
+            <td ><button class="action-button">Add</button> <button class="action-button">Edit</button> <button class="action-button">Delete</button></td>
+          </tr>
+        </tbody>
+    </table>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-end">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>     
+</div>

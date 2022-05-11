@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+nav {
+    padding: px;
+}
+nav .menu-icon {
+    margin-right: 10px;
+    margin-top: -15px;
+}
+.menu-btn {
+    box-shadow: none !important;
+}

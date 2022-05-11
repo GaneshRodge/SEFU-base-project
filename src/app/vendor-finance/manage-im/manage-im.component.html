@@ -1,0 +1,20 @@
+<div class="mt-4">
+    <div class="subheader" style="display:flex">
+        <!-- <ul class="navbar-nav  ml-auto"> -->
+        <div class="im-header"  [ngClass]="{'field-success' : toggle}" (click)="listShow()">
+            <a class="">List of IMs</a>
+        </div>
+        <div class="im-header">
+            <a class="" >Manage Base Rate</a>
+        </div>
+        <div class="im-header">
+            <a class="">Manage Rules</a>
+        </div>
+        <div class="im-header">
+            <a class="">Manage MCLR/EBLR</a>
+        </div>
+    </div>
+    <div class="list-content">
+        <router-outlet></router-outlet> 
+    </div>
+</div>

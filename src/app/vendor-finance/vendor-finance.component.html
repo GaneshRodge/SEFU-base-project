@@ -1,2 +1,32 @@
-<h1 class="mt-4">SCFU Application Vendor Finance</h1>
-<p>General Vendor Financing (GDF) is an application that caters to the Vendor financing requirements of Industry majors, Vendors and Sub Vendors who are clients of SBI. The application is customizable for all customers who require a Vendor Discount Scheme and enjoy Vendor financing limits with State Bank of India. </p>
+<div class="mt-4">
+    <div class="subheader" style="display:flex">
+        <!-- <ul class="navbar-nav  ml-auto"> -->
+        <div class="subheader-div" [ngClass]="{'field-show' : toggle}" (click)='show()'>
+            <img src="../../assets/upload.svg" alt="logo"> 
+            <a class="">Manage IM</a>
+        </div>
+        <div class="subheader-div">
+            <img src="../../assets/upload.svg" alt="logo"> 
+            <a class="" href="#">Manage Vendor</a>
+        </div>
+        <div class="subheader-div">
+            <img src="../../assets/upload.svg" alt="logo"> 
+            <a class="" href="#">Bulk Upload Transaction</a>
+        </div>
+        <div class="subheader-div">
+            <img src="../../assets/upload.svg" alt="logo"> 
+            <a class="" href="#">View Reports</a>
+        </div>
+        <div class="subheader-div">
+            <img src="../../assets/upload.svg" alt="logo"> 
+            <a class="" href="#">Warning</a>
+        </div>
+        <div class="subheader-div">
+            <img src="../../assets/upload.svg" alt="logo"> 
+            <a class="" href="#">Manage Users</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <router-outlet></router-outlet>
+    </div>
+</div>

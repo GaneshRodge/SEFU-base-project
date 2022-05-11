@@ -1,0 +1,22 @@
+table thead {
+    height: 42px;
+    background: #652A84 0% 0% no-repeat padding-box;
+    opacity: 1;
+    color: #fff;
+}
+
+table thead th {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+table tbody {
+    font-size: 14px;
+}
+.action-button{
+    color: #13a4e9;;
+    /* border: revert; */
+    border-color: #13a4e9;;
+    border-radius: 22%;
+    margin-right: 2%;
+}

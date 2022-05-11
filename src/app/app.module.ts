@@ -10,6 +10,8 @@ import { CustomerSupportComponent } from './customer-support/customer-support.co
 import { SignInComponent } from './shared/sign-in/sign-in.component';
 import { LogInComponent } from './shared/log-in/log-in.component';
 import { ResetComponent } from './shared/reset/reset.component';
+import { ManageImComponent } from './vendor-finance/manage-im/manage-im.component';
+import { ListOfImComponent } from './vendor-finance/manage-im/list-of-im/list-of-im.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ResetComponent } from './shared/reset/reset.component';
     CustomerSupportComponent,
     SignInComponent,
     LogInComponent,
-    ResetComponent
+    ResetComponent,
+    ManageImComponent,
+    ListOfImComponent
   ],
   imports: [
     BrowserModule,
