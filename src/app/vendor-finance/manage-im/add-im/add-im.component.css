@@ -1,0 +1,47 @@
+/* .accordion .card-header:after {
+    font-family: 'FontAwesome';  
+    content: "\f068";
+    float: right; 
+}
+.accordion .card-header.collapsed:after {
+    /* symbol for "collapsed" panels */
+    /* content: "\f067";  */
+
+.card p {
+    color: #5B6A79;
+    opacity: 1;
+}
+.card .accordion-item button {
+    background-color: #652A84;
+    opacity: 0.9;
+    height: 28px;
+    color:#fff
+}
+
+.card .accordion-item button::after {
+    background-color:#efd4d4
+}
+
+.card .card-body .form-group input , select {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: inherit;
+}
+.card-body .form-group label {
+    font-size: 14px;
+    padding: 15px 0;;
+}
+
+/* .card-body .form-group .col-6 {
+    padding: 0 20px;
+} */
+
+.accordion-button:focus, .accordion-button:active:focus, .accordion-button.active:focus {
+    outline:none;
+    box-shadow:none;
+}
+
+.card-body input:focus ,select:focus{
+    outline:none;
+    box-shadow:none;
+}

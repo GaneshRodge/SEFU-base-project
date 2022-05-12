@@ -12,6 +12,7 @@ import { LogInComponent } from './shared/log-in/log-in.component';
 import { ResetComponent } from './shared/reset/reset.component';
 import { ManageImComponent } from './vendor-finance/manage-im/manage-im.component';
 import { ListOfImComponent } from './vendor-finance/manage-im/list-of-im/list-of-im.component';
+import { AddImComponent } from './vendor-finance/manage-im/add-im/add-im.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ListOfImComponent } from './vendor-finance/manage-im/list-of-im/list-of
     LogInComponent,
     ResetComponent,
     ManageImComponent,
-    ListOfImComponent
+    ListOfImComponent,
+    AddImComponent
   ],
   imports: [
     BrowserModule,

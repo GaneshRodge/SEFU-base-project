@@ -6,6 +6,7 @@ import { DealerFinanceComponent } from './dealer-finance/dealer-finance.componen
 import { HomeComponent } from './home/home.component';
 import { LogInComponent } from './shared/log-in/log-in.component';
 import { SignInComponent } from './shared/sign-in/sign-in.component';
+import { AddImComponent } from './vendor-finance/manage-im/add-im/add-im.component';
 import { ListOfImComponent } from './vendor-finance/manage-im/list-of-im/list-of-im.component';
 import { ManageImComponent } from './vendor-finance/manage-im/manage-im.component';
 import { VendorFinanceComponent } from './vendor-finance/vendor-finance.component';
@@ -26,11 +27,16 @@ const routes: Routes = [
               component: ListOfImComponent
             }
           ]
-      }]
+      },
+      {
+        path: 'addIm',
+        component: AddImComponent
+      }
+    ]
   },
   {path: 'customer-support', component: CustomerSupportComponent},
   {path: 'login' , component: LogInComponent},
-  {path: 'signup' , component: SignInComponent},
+  {path: 'signup' , component: SignInComponent}
   
 ];
 

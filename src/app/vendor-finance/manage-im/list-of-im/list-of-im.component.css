@@ -13,6 +13,7 @@ table thead th {
 table tbody {
     font-size: 14px;
 }
+
 .action-button{
     color: #13a4e9;;
     /* border: revert; */
@@ -20,3 +21,21 @@ table tbody {
     border-radius: 22%;
     margin-right: 2%;
 }
+
+.im-function span {
+    color: #0095DA;
+    font-size: 14px;
+}
+
+.add-im {
+    margin-left: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.add-img {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
