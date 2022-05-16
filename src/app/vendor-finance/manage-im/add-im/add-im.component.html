@@ -216,10 +216,55 @@
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#myAccordion">
                     <div class="card-body">
-                        <p>Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web
-                            development. It is a collection of CSS and HTML conventions. <a
-                                href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/"
-                                target="_blank">Learn more.</a></p>
+                        <table class="table text-center">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">Account Type</th>
+                                    <th scope="col">Account Name</th>
+                                    <th scope="col">Nick Name</th>
+                                    <th scope="col">Branch Code</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Debit Processing Change Account</td>
+                                    <td><input type="text" class="form-control" name="accName" id="name-f" required>
+                                    </td>
+                                    <td><input type="text" class="form-control" name="nickName" id="name-f" required>
+                                    </td>
+                                    <td><input type="text" class="form-control" name="branchCode" id="name-f" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Debit Commission Change Account</td>
+                                    <td><input type="text" class="form-control" name="accName" id="name-f" required>
+                                    </td>
+                                    <td><input type="text" class="form-control" name="nickName" id="name-f" required>
+                                    </td>
+                                    <td><input type="text" class="form-control" name="branchCode" id="name-f" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Debit Interest Account</td>
+                                    <td><input type="text" class="form-control" name="accName" id="name-f" required>
+                                    </td>
+                                    <td><input type="text" class="form-control" name="nickName" id="name-f" required>
+                                    </td>
+                                    <td><input type="text" class="form-control" name="branchCode" id="name-f" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Debit Account</td>
+                                    <td><input type="text" class="form-control" name="accName" id="name-f" required>
+                                    </td>
+                                    <td><input type="text" class="form-control" name="nickName" id="name-f" required>
+                                    </td>
+                                    <td><input type="text" class="form-control" name="branchCode" id="name-f" required>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -364,10 +409,66 @@
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
                     <div class="card-body">
-                        <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for
-                            a given HTML element such as colors, backgrounds, fonts etc. <a
-                                href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a>
-                        </p>
+                        <form>
+                            <div class="col-9 form-group">
+                                <div class="row">
+                                    <div class="col-4 form-group">
+                                        <label for="name-f">Share By:*</label>
+                                    </div>
+                                    <div class="col-8 form-group">
+                                        <select name="cars" id="cars" class="form-control">
+                                            <option value="volvo">10%</option>
+                                            <option value="saab">8%</option>
+                                            <option value="mercedes">6.8%</option>
+                                            <option value="audi">9%</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 form-group">
+                                <div class="row">
+                                    <div class="col-3 form-group">
+                                        <label for="name-l">Back Dated Invoicing</label>
+                                    </div>
+                                    <div class="col-9 form-group">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <input type="radio" id="age1" name="age" value="30">
+                                                <label for="age1">   Default</label>
+                                            </div>
+                                            <div class="col-3">
+                                                <input type="radio" id="age2" name="age" value="60">
+                                                <label for="age2">   Customized</label>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-12 form-group">
+                            <div class="row">
+                                <div class="col-3 form-group">
+                                    <label for="name-l">Number of Days From:</label>
+                                </div>
+                                <div class="col-8 form-group">
+                                    <div class="row">
+                                    <div class="col-3">
+                                    <input type="text" class="form-control" name="lname" id="name-l"
+                                        required>
+                                    </div>
+                                    <div class="col-1">
+                                        <label for="name-l">To</label>   
+                                    </div>
+                                    <div class="col-3">
+                                                                     
+                                     <input type="text" class="form-control" name="lname" id="name-l"
+                                    required>
+                                </div>
+                            </div>
+                                </div>
+                            </div>
+                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -378,12 +479,34 @@
                 </h2>
                 <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
                     <div class="card-body">
-                        <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for
-                            a given HTML element such as colors, backgrounds, fonts etc. <a
-                                href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a>
-                        </p>
+                       <form>
+                        <div class="col-12 form-group">
+                            <div class="row">
+                                <div class="col-3 form-group">
+                                    <label for="name-l">Host to Host UNIKEN</label>
+                                </div>
+                                <div class="col-9 form-group">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <input type="radio" id="age1" name="age" value="30">
+                                            <label for="age1"> Yes</label>
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="radio" id="age2" name="age" value="60">
+                                            <label for="age2"> No</label>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        </form>
                     </div>
                 </div>
+            </div>
+            <div class="mt-2 text-end">
+                <button class="btn btn-secondary">Back</button>
+                <button class="btn btn-primary ms-3">Submit</button>
             </div>
         </div>
     </div>
